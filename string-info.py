@@ -20,3 +20,10 @@ print("Odd Index Characters:", message[1::2])
 #reverse the string
 
 print("Reversed Message:", message[::-1])
+
+#Split and Join
+
+def split_and_join(line):
+    line = line.split(" ")
+    line = "-".join(line)
+    return line
