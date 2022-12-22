@@ -13,7 +13,6 @@ aws_services += ["S3", "DyanmoDB", "Lambda", "IAM", "Neptune", "Route 53", "X-Ra
 aws_services.insert(6, "SNS")
 aws_services.insert(9, "Lightsail")
 
-
 #3 Print the list with the number of services
 
 print("Random 12 AWS Services: ")
