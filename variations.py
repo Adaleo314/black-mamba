@@ -1,6 +1,6 @@
 #!/usr/bin/env python3.7
 
-#Message Variable
+#Variations of text lettering
 
 message = input("Enter a message: ")
 
