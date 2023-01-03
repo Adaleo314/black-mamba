@@ -1,4 +1,4 @@
-#basic coniditions to be run in REPL
+#basic conditions to be run in REPL
 
 #if statement basics. not true, nothing prints
 if 'a' < 'b':
