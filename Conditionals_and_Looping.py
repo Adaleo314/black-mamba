@@ -30,4 +30,4 @@ elif len(name) >= 4:
 else:
     print("Your name is short")
     
-    
+#if no other if statements, replace if with "pass" under else:    
