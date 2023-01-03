@@ -4,7 +4,7 @@
 
 message = input("Enter a message: ")
 
-print("Lowecase:", message.lower())
+print("Lowercase:", message.lower())
 print("Uppercase:", message.upper())
 print("Capitalized:", message.capitalize())
 print("Title Case", message.title())
