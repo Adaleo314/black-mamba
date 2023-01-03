@@ -29,5 +29,7 @@ elif len(name) >= 4:
     print("Your name us 4 or more characters")
 else:
     print("Your name is short")
+
+#if no other if statements, replace if with "pass" under else:
     
 #if no other if statements, replace if with "pass" under else:    
