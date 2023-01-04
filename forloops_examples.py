@@ -75,3 +75,21 @@ for color in colors:
 else:
     print("Orange is not in the list")\
     
+#using ranges (do not need counter at end)
+for x in range(10):
+    print("looping")
+    
+    
+#list comprehensions (list of changes at end)
+colors = ['red', 'blue', 'orange', 'green', 'yellow']
+
+#items before the "for" are ones to be processed
+#items after the "for" each item in list
+uppercase_colors = [color.upper() for color in colors]
+print(uppercase_colors)    
+
+#get me each color for colors variable, if that color is 
+#red, orange, or yellow, to create warm_colors variable  
+warm_colors = [color for color in colors if color in ['red', 'orange', 'yellow']]
+print(warm_colors)
+    
