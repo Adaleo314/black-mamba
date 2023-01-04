@@ -10,7 +10,7 @@ if False:
 else:
     print("Was false")
     
-#elif is else if statements
+#elif if else if statements
 if 'b' < 'a':
     print("This is true")
 elif 'c' < 'd':
