@@ -10,3 +10,7 @@ while count <= 4:
     
 #for statements
 #for TEMP_VARIABLE in SEQUENCE
+colors = ['blue', 'green', 'red', 'purple']
+
+for color in colors:
+    print(color)
