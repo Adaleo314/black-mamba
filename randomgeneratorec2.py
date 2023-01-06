@@ -1,8 +1,6 @@
 import random 
 import string
 import sys
-from itertools import repeat
-
 
 #Generate a 6 character code of lowercase letters and numbers
 def generated_name(size=6, chars=string.ascii_lowercase + string.digits):
