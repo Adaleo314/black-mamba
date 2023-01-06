@@ -41,19 +41,10 @@ for d in department:
             print("Your EC2 Name is: " + generated_name(6))
             break
     if department == "FinOps" or department.lower() == "finops":
-                print("You have selected FinOps")
-                print("Your EC2 Name is: " + generated_name(6))
-                break
+            print("You have selected FinOps")
+            print("Your EC2 Name is: " + generated_name(6))
+            break
     
-        
-
-departments = []
-departments += ('Marketing', 'Accounting', 'FinOps')
-
-
-
-
-
 
 
 
