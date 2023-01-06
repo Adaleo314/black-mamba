@@ -19,7 +19,22 @@ for v in verifydep:
         sys.exit() 
         break
 
-print("Enter your assigned department: ")
+department = input(" Enter Marketing, Accounting, or FinOps: ")
+
+for d in department:
+    
+    if department == "Marketing" or department.lowercase() == "marketing":
+            print("You have selected Marketing")
+            print("Your EC2 Name is: " + generated_name(6))
+            break
+    if department == "Accounting" or department.lowercase() == "accounting":
+            print("You have selected Accounting")
+            print("Your EC2 Name is: " + generated_name(6))
+            break
+    if department == "FinOps" or department.lowercase() == "finops":
+                print("You have selected FinOps")
+                print("Your EC2 Name is: " + generated_name(6))
+                break
     
         
 
