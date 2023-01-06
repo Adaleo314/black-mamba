@@ -1,34 +1,35 @@
-from random import choice
+import random 
+import string
+import sys
 
-def select_dep():
 
-    print("Enter the Department name that requires EC2 generated name: ")
-    print("Available Deparments for EC2 names: ")
-    print("Marketing")
-    print("Accounting")
-    print("FinOps")
-        
-    assigned_dep = input("Enter your assigned department: ")
+#Generate a 6 character code of lowercase letters and numbers
+def generated_name(size=6, chars=string.ascii_lowercase + string.digits):
+    return ''.join(random.choice(chars) for x in range(size))
     
-    
-print(select_dep)    
-    match assigned_dep:
+
+print("EC2 Name Generator Designed for Accounting, Marketing, & FinOps ONLY") 
         
-        case 'Marketing'
-            return 'Marketing'
-        case 'Accounting'
-            return 'Accounting
-        case 'FinOps'
-            return 'FinOps'
-        case 
-            print(Please select an applicable department. Responses are case-sensitive.)
+department = input("Do you work in Marketing, Accounting, or FinOps? ")
+    
+for y in assigned_dep:
+    
+    if department == 'Yes':
+        continue
+    elif department == 'No':
+        sys.exit() 
+        break
+
+print("Enter your assigned department: ")
+    
+        
 
 departments = []
 departments += ('Marketing', 'Accounting', 'FinOps')
 
 
 
-assigned_dep = input("Do you work in Marketing, Accounting, or FinOps? ")
+
 
 
 
