@@ -13,28 +13,32 @@ print("**EC2 Name Generator Designed for Marketing, Accounting, & FinOps ONLY**"
 verifydep = input("Do you work in Marketing, Accounting, or FinOps? Enter yes or no: ")
     
 for v in verifydep:
-    if v == 'Yes, yes':
-        continue
-    elif v == 'No, no':
-        print("Name Generator not needed if outside listed departments. Exiting..")
+    if verifydep == 'Yes' or 'yes':
+        break
+    elif verifydep == 'No' or 'no':
+        print("Name Generator not permitted if outside listed departments. Exiting..")
         raise SystemExit
         sys.exit()     
 
 
 number = int(input("Enter the number of Generated EC2 names needed: "))
 
-if number < 0:
-    print("Number of Generated EC2 Names must be more than 0")
+if number == 0:
+    print("Number of Generated EC2 Names must be more than 0. Exiting...")
+    raise SystemExit
+    sys.exit()
+    
+elif number > 0:
+    print()
     
     
-
 department = input(" Enter Marketing, Accounting, or FinOps: ")
 
 for d in department:
     
     if department == "Marketing" or department.lower() == "marketing":
             print("You have selected Marketing")
-            print("Your EC2 Name is: " + generated_name(6))
+            print("Your EC2 Name is: " + generated_name(6)) 
             break
     if department == "Accounting" or department.lower() == "accounting":
             print("You have selected Accounting")
