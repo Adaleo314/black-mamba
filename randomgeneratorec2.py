@@ -19,19 +19,28 @@ for v in verifydep:
         sys.exit() 
         break
 
+
+number = int(input "Enter the number of Generated EC2 names needed: ")
+
+if number < 0:
+    print("Number of Generated EC2 Names must be more than 0")
+    
+elif number < 0:
+    
+
 department = input(" Enter Marketing, Accounting, or FinOps: ")
 
 for d in department:
     
-    if department == "Marketing" or department.lowercase() == "marketing":
+    if department == "Marketing" or department.lower() == "marketing":
             print("You have selected Marketing")
             print("Your EC2 Name is: " + generated_name(6))
             break
-    if department == "Accounting" or department.lowercase() == "accounting":
+    if department == "Accounting" or department.lower() == "accounting":
             print("You have selected Accounting")
             print("Your EC2 Name is: " + generated_name(6))
             break
-    if department == "FinOps" or department.lowercase() == "finops":
+    if department == "FinOps" or department.lower() == "finops":
                 print("You have selected FinOps")
                 print("Your EC2 Name is: " + generated_name(6))
                 break
