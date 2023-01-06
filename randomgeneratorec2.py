@@ -10,13 +10,12 @@ def generated_name(size=6, chars=string.ascii_lowercase + string.digits):
 
 print("EC2 Name Generator Designed for Accounting, Marketing, & FinOps ONLY") 
         
-department = input("Do you work in Marketing, Accounting, or FinOps? ")
+verifydep = input("Do you work in Marketing, Accounting, or FinOps? Enter yes or no: ")
     
-for y in assigned_dep:
-    
-    if department == 'Yes':
+for v in verifydep:
+    if verifydep == 'Yes, yes':
         continue
-    elif department == 'No':
+    elif verifydep == 'No, no':
         sys.exit() 
         break
 
