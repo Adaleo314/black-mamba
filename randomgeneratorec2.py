@@ -14,12 +14,34 @@ verifydep = input("Do you work in Marketing, Accounting, or FinOps? Enter yes or
     
 for v in verifydep:
     if verifydep == 'yes':
-        break
+        continue
     elif verifydep == 'no':
-        print("Name Generator not permitted if outside listed departments. Exiting..")
+        print("Name Generator not permitted if outside listed departments. Exiting...")
         sys.exit() 
-   
+    else:
+        print("Please enter yes or no. Exiting...")
+        sys.exit()
 
+department = input("Enter Marketing, Accounting, or FinOps: ")
+
+#Select which department they work in
+for d in department:
+    
+    if department == "Marketing" or department.lower() == "marketing":
+            print("You have selected Marketing")
+            break
+    if department == "Accounting" or department.lower() == "accounting":
+            print("You have selected Accounting")
+            break
+    if department == "FinOps" or department.lower() == "finops":
+            print("You have selected FinOps")
+            break
+    else:
+        print("Invalid Department. Please try again.")
+        raise SystemExit
+        sys.exit()
+        
+        
 #number of EC2 names needed
 number = int(input("Enter the number of Generated EC2 names needed: "))
 
@@ -28,31 +50,13 @@ if number == 0:
     sys.exit()
     
 elif number > 0:
-    print()
-    
-    
-department = input("Enter Marketing, Accounting, or FinOps: ")
-
-for d in department:
-    
-    if department == "Marketing" or department.lower() == "marketing":
-            print("You have selected Marketing")
-            print("Your EC2 Name is/are: " + generated_name(6)) 
-            break
-    if department == "Accounting" or department.lower() == "accounting":
-            print("You have selected Accounting")
-            print("Your EC2 Name is/are: " + generated_name(6))
-            break
-    if department == "FinOps" or department.lower() == "finops":
-            print("You have selected FinOps")
-            print("Your EC2 Name is/are: " + generated_name(6))
-            break
-    else:
-        print("Invalid Department. Please try again.")
-        raise SystemExit
-        sys.exit()
+    print()        
 
 
-
+for _ in range(1, number + 1):
+    EC2_Name = department + generated_name(6)
+    print("Your EC2 Name is/are: ", EC2_Name)
+   
+print("That you for your Service! Have a Great Day!")
 
 
