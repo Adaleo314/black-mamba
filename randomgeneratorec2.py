@@ -22,9 +22,10 @@ for v in verifydep:
         print("Please enter yes or no. Exiting...")
         sys.exit()
 
-department = input("Enter Marketing, Accounting, or FinOps: ")
 
 #Select which department they work in
+department = input("Enter Marketing, Accounting, or FinOps: ")
+
 for d in department:
     
     if department == "Marketing" or department.lower() == "marketing":
@@ -38,7 +39,6 @@ for d in department:
             break
     else:
         print("Invalid Department. Please try again.")
-        raise SystemExit
         sys.exit()
         
         
@@ -57,6 +57,6 @@ for _ in range(1, number + 1):
     EC2_Name = department + generated_name(6)
     print("Your EC2 Name is/are: ", EC2_Name)
    
-print("That you for your Service! Have a Great Day!")
+print("Thank you for your Service! Have a Great Day!")
 
 
