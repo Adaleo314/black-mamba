@@ -73,8 +73,8 @@ for color in colors:
        print("Orange is in the list")
        break
 else:
-    print("Orange is not in the list")\
-    
+    print("Orange is not in the list")
+
 #using ranges (do not need counter at end)
 for x in range(10):
     print("looping")
